@@ -6,7 +6,11 @@ import useWindowScrollPositions from '../../hooks/useWindowScroll';
 import links from '../../types/links.constants';
 import './style.scss';
 
-const NavBar = () => {
+interface INavbarProps {
+  className: string;
+}
+
+const NavBar = ({ className }: INavbarProps) => {
   const [expandMenu, setExpandMenu] = useState<boolean>(false);
 
   const onExpandMenu = () => {
@@ -16,7 +20,7 @@ const NavBar = () => {
   const scrollPosition = useWindowScrollPositions();
 
   return (
-    <div id="navbar" className={`navbar ${(scrollPosition.scrollY > 0 || expandMenu) ? "navbar-onscroll" : ""}`}>
+    <div id="navbar" className={`navbar ${className} ${(scrollPosition.scrollY > 0 || expandMenu) ? "navbar-onscroll" : ""}`}>
       <div className='navbar-toolbox'>
         <div className='navbar-responsive'>
           <div className='brand-logo'>

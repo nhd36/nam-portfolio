@@ -1,14 +1,12 @@
-import React from 'react';
 import './App.scss';
 import IntroPage from './pages/IntroPage';
-import CustomParticles from './components/CustomParticles';
+import AboutPage from './pages/AboutPage';
 
 function App() {
 
   return (
     <>
-      <CustomParticles/>
-      <IntroPage/>
+      <AboutPage/>
     </>
   );
 }

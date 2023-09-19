@@ -6,11 +6,11 @@
   height: 100%;
 
   .welcome-section-child {
-    width: 50%;
     height: 100%;
   }
 
   .welcome-section-text {
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,7 @@
   }
 
   .welcome-section-asset {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,15 @@
 
     p,
     .welcome-section-p {
-      font-size: 2rem !important;
+      font-size: 2.3rem !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-section-text {
+    p, .welcome-section-p {
+      font-size: 1.8rem !important;
     }
   }
 }

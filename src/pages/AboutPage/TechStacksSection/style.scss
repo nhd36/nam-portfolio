@@ -1,0 +1,47 @@
+.techstacks-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  height: 100%;
+
+  .techstacks-section-title-box {
+    h1 {
+      color: white
+    }
+  }
+
+  .techstacks-section-grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 1300px;
+
+    .techstacks-section-grid-item {
+      flex: 0 1 auto;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      border-radius: 25%;
+      transition: all 0.5s ease;
+      border: 2px solid rgb(243, 8, 243);
+
+      .techstacks-section-grid-img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .techstacks-section-grid-item:hover {
+      transform: scale(1.3);
+      box-shadow: 0 0 15px white;
+    }
+  }
+}

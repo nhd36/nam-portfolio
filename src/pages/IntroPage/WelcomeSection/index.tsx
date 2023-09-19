@@ -10,7 +10,7 @@ const WelcomTextSection = () => {
       <div className="welcome-section">
         <div className="welcome-section-child welcome-section-text">
           <p color="white">
-            Hello everyone!
+            <i>Bonjour, Hola, 你好, Xin chào!!!</i>
           </p>
           <p>
             My name is <span className="text-purple">Nam Dao</span>
@@ -31,9 +31,9 @@ const WelcomTextSection = () => {
                   1000,
                   'A Creator',
                   1000,
-                  'A Student',
-                  1000,
                   'A Teacher',
+                  1000,
+                  'A Learner',
                   1000,
                   'A Friend',
                   1000,
