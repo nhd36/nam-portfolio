@@ -1,0 +1,12 @@
+.basepage-children {
+    height: fit-content;
+    gap: 50px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .basepage-children {
+        margin-top: 50px !important;
+    }
+}
